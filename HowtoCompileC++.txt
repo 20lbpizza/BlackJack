@@ -1,0 +1,28 @@
+
+1. For a simple program:
+
+	g++ inputfile.cpp -o output
+
+	Then to run
+
+	./output
+
+
+2. For an SFML file
+
+	First generate a *.o file
+
+	g++ -c inputfile.cpp 
+
+	This will generate inputfile.o
+	Next link the SFML files and generate the executable
+
+	g++ inputfile.o -o sfml-app -lsfml-graphics -lsfml-window -lsfml-system	
+
+	Then run via
+
+	./sfml-app
+
+3. Note for files containing C++11 code:
+
+	To compile as C++11 simply add -std=c++11 as an argument to g++
